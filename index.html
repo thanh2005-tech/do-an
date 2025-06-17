@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shyzz Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Shyzz Fashion</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#" id="loginBtn">Đăng nhập</a></li>
+          <li><a href="#" id="cartBtn">🛒 <span id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>BST Mới Mùa Hè 2025</h2>
+      <p>Phong cách hiện đại - Giá cả hợp lý</p>
+      <a href="#" class="btn">Mua ngay</a>
+    </div>
+  </section>
+
+  <section class="products container">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Áo sơ mi nam" data-price="350000">
+        <img src="https://product.hstatic.net/200000525243/product/image-xanh-navy-dam-1-ao-so-mi-nam-tay-ngan-cotton-n-m-1905144_10f61ca3ba3442cf84d3dbcfdd2220c7_1024x1024.jpg" alt="Áo sơ mi nam" />
+        <h3>Áo sơ mi nam</h3>
+        <p>350.000₫</p>
+        <a href="#" class="btn add-to-cart">Thêm vào giỏ</a>
+      </div>
+      <div class="product-card" data-name="Đầm nữ mùa hè" data-price="420000">
+        <img src="https://dongphuchaianh.vn/wp-content/uploads/2023/08/vay-midi-mua-he.jpg" alt="Đầm nữ mùa hè" />
+        <h3>Đầm nữ mùa hè</h3>
+        <p>420.000₫</p>
+        <a href="#" class="btn add-to-cart">Thêm vào giỏ</a>
+      </div>
+      <div class="product-card" data-name="Quần kaki" data-price="390000">
+        <img src="https://pos.nvncdn.com/5048a3-93414/ps/20220705_vx03mqaC5IBBYf7MzX8jtsO6.jpg" alt="Quần kaki" />
+        <h3>Quần kaki</h3>
+        <p>390.000₫</p>
+        <a href="#" class="btn add-to-cart">Thêm vào giỏ</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shyzz Fashion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Đăng nhập</h2>
+      <input type="text" id="username" placeholder="Tên đăng nhập" />
+      <input type="password" id="password" placeholder="Mật khẩu" />
+      <button id="loginSubmit">Đăng nhập</button>
+      <p id="loginStatus"></p>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeCart">&times;</span>
+      <h2>Giỏ hàng</h2>
+      <ul id="cart-items"></ul>
+      <p>Tổng tiền: <strong id="cart-total">0</strong>₫</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
